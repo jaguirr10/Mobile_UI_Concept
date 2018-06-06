@@ -1,0 +1,149 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:after,
+*:before {
+  webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  height: auto;
+  min-height: 100%;
+}
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  font-family: "Open Sans", arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+body {
+  background: -webkit-linear-gradient(45deg, #1aff9f 0%, rgba(26, 255, 159, 0) 70%), -webkit-linear-gradient(315deg, #0657f9 10%, rgba(6, 87, 249, 0) 80%), -webkit-linear-gradient(225deg, #f20d0d 10%, rgba(242, 13, 13, 0) 80%), -webkit-linear-gradient(135deg, #f9971f 100%, rgba(249, 151, 31, 0) 70%);
+  background: linear-gradient(45deg, #1aff9f 0%, rgba(26, 255, 159, 0) 70%), linear-gradient(135deg, #0657f9 10%, rgba(6, 87, 249, 0) 80%), linear-gradient(225deg, #f20d0d 10%, rgba(242, 13, 13, 0) 80%), linear-gradient(315deg, #f9971f 100%, rgba(249, 151, 31, 0) 70%);
+}
+.blockCircle {
+  border: 16px solid #000;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 320px;
+  height: 480px;
+  position: relative;
+  transform: translateY(30px);
+}
+.blockCircle:hover .author {
+  color: #666;
+}
+.circle {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  display: block;
+  height: 40px;
+  margin-bottom: 2px;
+  width: 40px;
+  position: relative;
+  transition: width 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  width: 0;
+  overflow: hidden;
+}
+.circle span {
+  text-transform: uppercase;
+  color: #fff;
+  padding-left: 10px;
+  line-height: 40px;
+}
+.circle.cir1 {
+  background-color: #2980b9;
+  transition-delay: 3s;
+}
+.circle.cir2 {
+  background-color: #16a085;
+  transition-delay: 2.5s;
+}
+.circle.cir3 {
+  background-color: #27ae60;
+  transition-delay: 2s;
+}
+.circle.cir4 {
+  background-color: #8e44ad;
+  transition-delay: 1.5s;
+}
+.circle.cir5 {
+  background-color: #2c3e50;
+  transition-delay: 1s;
+}
+.circle.cir6 {
+  background-color: #f39c12;
+  transition-delay: .5s;
+}
+.circle.cir7 {
+  background-color: #c0392b;
+}
+.animate .circle {
+  transition: width 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  width: 100%;
+}
+.animate .circle.cir2 {
+  transition-delay: .5s;
+}
+.animate .circle.cir3 {
+  transition-delay: 1s;
+}
+.animate .circle.cir4 {
+  transition-delay: 1.5s;
+}
+.animate .circle.cir5 {
+  transition-delay: 2s;
+}
+.animate .circle.cir6 {
+  transition-delay: 2.5s;
+}
+.animate .circle.cir7 {
+  transition-delay: 3s;
+}
+.btn {
+  display: block;
+  margin: 8px;
+  width: 40px;
+}
+.btn span {
+  background-color: #000;
+  display: inline-block;
+  height: 3px;
+  position: relative;
+  width: 100%;
+  transform: translateY(-5px);
+}
+.btn span:after,
+.btn span:before {
+  content: '';
+  height: 3px;
+  background-color: #000;
+  position: absolute;
+  z-index: 99;
+  width: 40px;
+  left: 0;
+}
+.btn span:after {
+  top: -8px;
+}
+.btn span:before {
+  bottom: -8px;
+}
+.author {
+  color: #eee;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}

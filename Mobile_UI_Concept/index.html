@@ -1,0 +1,41 @@
+
+<!DOCTYPE html><html lang='en' >
+<head><meta charset='UTF-8'>
+
+<title>Mobile_UI_Concept</title>
+
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<div class="blockCircle">
+     <a href="#" id="btn" class="btn">
+          <span></span>
+     </a>
+     <a class="circle cir1"><span>home</span></a>
+     <a class="circle cir2"><span>about</span></a>
+     <a class="circle cir3"><span>products</span></a>
+     <a class="circle cir4"><span>services</span></a>
+     <a class="circle cir5"><span>news</span></a>
+     <a class="circle cir6"><span>support</span></a>
+     <a class="circle cir7"><span>contact</span></a>
+    
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+
+
+   $("#btn").click(function() {
+     $(".blockCircle").toggleClass('animate');
+ });
+
+
+
+</script>
+</body>
+</html>
